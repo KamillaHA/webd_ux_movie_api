@@ -12,27 +12,37 @@
 <!-- Header -->
     <header>
         <h1>The Movie Database</h1>
+<!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><button id="now_playing">Now Playing</button></li>
+                    <li><button id="popular">Popular</button></li>
+                    <li><button id="top_rated">Top Rated</button></li>
+                    <li><button id="upcoming">Upcoming</button></li>
+                </ul>
+            </nav>
     </header>
 
-<!-- Navigation -->
-    <nav>
-        <ul>
-            <li><button id="now_playing">Now Playing</button></li>
-            <li><button id="popular">Popular</button></li>
-            <li><button id="top_rated">Top Rated</button></li>
-            <li><button id="upcoming">Upcoming</button></li>
-        </ul>
-    </nav>
+<!-- Movie list -->
     <main>
-
-<!-- Section - Error loading -->
-        <section id="error" class="hidden">
-            <header>
-                <h2>Error retrieving movie information</h2>
-            </header>
-            <p></p>
-        </section>
         <section id="movie-list"></section>
+
+<!-- Template - Importing the movies -->
+        <template id="filmCard">
+            <article class="film">
+                <header>
+                    <h2></h2>        
+                </header>
+                <section class="film-content">
+                    <img src="" alt="">
+                    <div>
+                        <p class="film-overview"></p>
+                        <p class="film-info original-title"></p>
+                        <p class="film-info date"></p>
+                    </div>
+                </section>
+            </article>
+        </template>
     </main>
 
 <!-- Footer -->
@@ -41,21 +51,4 @@
     </footer>
 
 </body>
-
-<!-- Template - Importing the movies -->
-<template id="filmCard">
-    <article class="film">
-        <header>
-            <h2></h2>        
-        </header>
-        <section class="film-content">
-            <img src="" alt="">
-            <div>
-                <p class="film-overview"></p>
-                <p class="film-info original-title"></p>
-                <p class="film-info date"></p>
-            </div>
-        </section>
-    </article>
-</template>
 </html>

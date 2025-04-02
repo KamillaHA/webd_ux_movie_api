@@ -46,10 +46,3 @@ const showFilms = (films) => {
     });
     movieList.append(filmList);
 };
-
-// Display an error message if needed
-const showError = (error) => {
-    const errorSection = document.querySelector('#error');
-    errorSection.querySelector('p').innerText = error;
-    errorSection.classList.remove('hidden');
-};

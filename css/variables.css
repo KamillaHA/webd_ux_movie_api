@@ -11,8 +11,4 @@
     /* Fonts */
     --fontMain: Poppins, sans-serif;
     --fontHeader: Merriweather, serif;
-
-    /* Size */
-    --coverMaxWidth: 154px;
-    --coverMaxHeight: 231px;
 }

@@ -1,14 +1,10 @@
 import { queryFilms } from './movies.js';
 
-// Query the API for a list of the movies
-document.querySelectorAll('nav button').forEach((menuOption) => {
-    menuOption.addEventListener('click', (e) => {
-        queryFilms(e.target.id);
-
-        const selectedMenuOption = document.querySelector('nav button.selected');
-        if (selectedMenuOption !== null) {
-            selectedMenuOption.classList.remove('selected');
-        }
-        e.target.classList.add('selected');
-    });
+document.querySelector('nav').addEventListener('click', (e) => {
+    if (e.target.tagName !== 'BUTTON') return;
+    
+    queryFilms(e.target.id);
+    
+    document.querySelector('nav button.selected')?.classList.remove('selected');
+    e.target.classList.add('selected');
 });

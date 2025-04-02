@@ -111,6 +111,19 @@ article {
     font-weight: bold;
 }
 
+/* Header */
+header {
+    font-size: 14px;
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+}
+@media (min-width: 480px) {
+    header {
+        font-size: 16px;
+    }
+}
+
 /* Header & Footer */
 header, footer {
     font-family: var(--fontHeader);
